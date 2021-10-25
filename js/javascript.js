@@ -1,3 +1,4 @@
+//soal 1
 const printNumbers = (input) => {
     if (!input && input !== 0) {
         return ''
@@ -16,7 +17,7 @@ const printNumbers = (input) => {
 }
 
 console.log(printNumbers(123))
-
+// soal 3
 function isSubstring(string, substring) {
     for (let i = 0; i < string.length; i++) {
         const sliced = string.slice(i, i + substring.length);
@@ -30,7 +31,7 @@ function isSubstring(string, substring) {
 
 console.log(isSubstring('hello world', 'world'));
 console.log(isSubstring('hello world', 'World'));
-
+//soal 0
 function printSign(n, sign = '*') {
     let res = ''
     for (let i = 0; i < n; i++) {
@@ -44,13 +45,13 @@ function printSign(n, sign = '*') {
 }
 
 console.log(printSign(5))
-
+//soal 4
 function Submission(arr1, arr2) {
     return arr1.filter(item => !arr2.includes(item))
 }
 
 console.log(Submission([1,2,3],[1]))
-
+//soal 5
 function expl1(arr, index, offset) {
     if (0 > index + offset || arr.length < offset + index +1) {
         return console.error("Invalid array")
@@ -61,22 +62,14 @@ function expl1(arr, index, offset) {
 
 console.log(expl1([1, 2, 3, 4], 2, 0))
 
-function reverse(arr) {
-    const newArr = arr.split("")
-    console.log(newArr)
-    let arr2 = []
-    for (let i = 0; arr.length > i + 1; i++) {
-        arr2 = newArr.pop();
-    } return arr2
-}
-
-reverse("abcd")
-
+//soal 2
 function rec(str){
     return str ? rec(str.substr(1)) + str[0] : str
 }
 
 console.log(rec("abcd"))
+
+// soal 6
 
 function sortStr(str) {
     let result = ''
